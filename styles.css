@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+#map {
+  height: 600px;
+}
+
+.info {
+  font-size: 12px
+}
+
+a {
+  color: #325573
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4a9ee7
+}
+
+/* TOGGLE */
+
+.toggle-container {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.mag-toggle {
+  display: none;
+}
+
+.mag-toggle-label {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color .3s
+}
+
+.mag-toggle-label:hover {
+  background-color: #eee;
+}
+
+.mag-toggle-label:after {
+  content: "↑";
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform .3s;
+}
+
+.mag-toggle:checked + .mag-toggle-label:after {
+  transform:rotate(180deg)
+}

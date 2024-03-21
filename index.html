@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>USGS Earthquake data visualization</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1> <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson" target="_blank" rel="noopener noreferrer">USGS Earthquake data</a> visualization - Past 24h</h1>
+    <div id="map"></div>
+    <div class="toggle-container">
+      <input type="checkbox" id="mag-toggle" class="mag-toggle" />
+      <label for="mag-toggle" class="mag-toggle-label">Sort by magnitude</label>
+    </div>
+    <table id="table"></table>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
