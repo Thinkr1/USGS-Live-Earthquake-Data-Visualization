@@ -88,3 +88,9 @@ a:hover {
 .mag-toggle:checked + .mag-toggle-label:after {
   transform:rotate(180deg)
 }
+
+footer {
+  text-align: center;
+  padding: auto;
+  margin-bottom: 10px;
+}
